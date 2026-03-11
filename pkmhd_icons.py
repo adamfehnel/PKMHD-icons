@@ -59,9 +59,9 @@ SPRITE_CACHE_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "spr
 OUTPUT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "pkmhd_icons_wallpaper.png")
 
 # ── Sprite Source ─────────────────────────────────────────────
-# URL template for individual sprite images (Black & White generation pixel art)
+# URL template for individual sprite images (Home renders — covers all generations)
 _SPRITE_DB_BASE = "https://img.pokemondb.net"
-SPRITE_URL = f"{_SPRITE_DB_BASE}/sprites/black-white/normal/{{name}}.png"
+SPRITE_URL = f"{_SPRITE_DB_BASE}/sprites/home/normal/{{name}}.png"
 # Index page used to discover all available creature names
 _SPRITE_INDEX_URL = "https://pokemondb.net/sprites"
 

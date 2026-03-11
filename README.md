@@ -2,18 +2,51 @@
 
 An MKBHD **"Icons"**-style wallpaper generator using retro video game creature sprites.
 
-Downloads pixel art sprites from a public sprite database, converts them into subtle dark silhouettes, and arranges them in a staggered brick-pattern grid on a gradient background — just like the iconic MKBHD wallpaper, but with pocket monsters.
+Downloads sprites from a public sprite database, converts them into silhouettes, and arranges them in a staggered brick-pattern grid on a gradient background — just like the iconic MKBHD wallpaper, but with pocket monsters. Fully configurable colors, sizes, spacing, and gradients.
 
 ![Example wallpaper preview](preview.png)
+
+## Sample Gallery
+
+Generated with `generate_samples.py` — 20 designs across desktop, ultrawide, and mobile resolutions.
+
+### Desktop (16:9)
+
+| Neon Pink (4K) | Ink on Paper (4K) | Citrus (4K) |
+|---|---|---|
+| ![](samples/thumbnails/neon-pink_4K_3840x2160.png) | ![](samples/thumbnails/ink-on-paper_4K_3840x2160.png) | ![](samples/thumbnails/citrus_4K_3840x2160.png) |
+
+| Candy (1440p) | Stealth (1440p) | Valentine (1080p) | Matrix (1080p) |
+|---|---|---|---|
+| ![](samples/thumbnails/candy_1440p_2560x1440.png) | ![](samples/thumbnails/stealth_1440p_2560x1440.png) | ![](samples/thumbnails/valentine_1080p_1920x1080.png) | ![](samples/thumbnails/matrix_1080p_1920x1080.png) |
+
+### Ultrawide (21:9)
+
+| Royalty (UW 1440p) | Reef (UW 1440p) | Tron (UW 1080p) | Hot Orange (UW 4K) |
+|---|---|---|---|
+| ![](samples/thumbnails/royalty_UW1440p_3440x1440.png) | ![](samples/thumbnails/reef_UW1440p_3440x1440.png) | ![](samples/thumbnails/tron_UW1080p_2560x1080.png) | ![](samples/thumbnails/hot-orange_UW4K_5120x2160.png) |
+
+### Mobile (Portrait)
+
+| Tropical (iPhone 15) | Neon Pink (iPhone 15) | Ultraviolet (iPM) | Ember Glow (iPM) |
+|---|---|---|---|
+| ![](samples/thumbnails/tropical_iPhone15_1179x2556.png) | ![](samples/thumbnails/neon-pink_iPhone15_1179x2556.png) | ![](samples/thumbnails/ultraviolet_iPM_1290x2796.png) | ![](samples/thumbnails/ember-glow_iPM_1290x2796.png) |
+
+| Crimson (Galaxy S) | Parchment (Galaxy S) | Candy (Galaxy S) | Frozen (FHD) | Blueprint (FHD) |
+|---|---|---|---|---|
+| ![](samples/thumbnails/crimson_GalaxyS_1440x3200.png) | ![](samples/thumbnails/parchment_GalaxyS_1440x3200.png) | ![](samples/thumbnails/candy_GalaxyS_1440x3200.png) | ![](samples/thumbnails/frozen_FHD_1080x1920.png) | ![](samples/thumbnails/blueprint_FHD_1080x1920.png) |
 
 ## Quick Start
 
 ```bash
-# Install the one dependency
+# Install dependencies
 pip install Pillow requests
 
-# Generate the wallpaper
+# Generate a single wallpaper (edit pkmhd_icons.py to customize)
 python pkmhd_icons.py
+
+# Generate all 20 sample wallpapers across device sizes
+python generate_samples.py
 ```
 
 The wallpaper will be saved as `pkmhd_icons_wallpaper.png` in the same directory.

@@ -1,9 +1,10 @@
 # Cached sprite images (re-downloaded on first run)
 sprite_cache/
 
-# Generated wallpaper output
+# Generated wallpaper output (full-size)
 *.png
 !preview.png
+!samples/thumbnails/*.png
 
 # Python
 __pycache__/
