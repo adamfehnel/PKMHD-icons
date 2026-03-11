@@ -1,0 +1,11 @@
+# Cached sprite images (re-downloaded on first run)
+sprite_cache/
+
+# Generated wallpaper output
+*.png
+!preview.png
+
+# Python
+__pycache__/
+*.pyc
+.DS_Store
